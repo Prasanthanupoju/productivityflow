@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './', // ✅ This fixes CSS/assets not loading on Render
   server: {
     host: "::",
     port: 8080,
